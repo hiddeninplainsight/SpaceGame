@@ -42,6 +42,7 @@
 		</Linker>
 		<ExtraCommands>
 			<Add after="cp ../images/background.png bin/Debug/background.png" />
+			<Add after="cp ../images/spaceship.png bin/Debug/spaceship.png" />
 		</ExtraCommands>
 		<Unit filename="main.cpp" />
 		<Extensions>

@@ -16,6 +16,7 @@ int main(int, char** argv)
         SDL::Renderer renderer{window};
 
         SDL::Texture backgroundTexture{renderer, SDL::Surface::CreateFromImage(path + "background.png")};
+        SDL::Texture spaceshipTexture{renderer, SDL::Surface::CreateFromImage(path + "spaceship.png")};
 
         bool quit = false;
         SDL_Event event;
@@ -47,6 +48,8 @@ int main(int, char** argv)
 
             renderer.Copy(backgroundTexture, -x, 0);
             renderer.Copy(backgroundTexture, -x + 1920, 0);
+
+            renderer.Copy(spaceshipTexture, 50, 500);
 
             renderer.Present();
 
